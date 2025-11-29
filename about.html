@@ -29,6 +29,8 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <style>
 .nav-pills .nav-link {
     background-color: #f8f9fa;
@@ -419,18 +421,15 @@ We connect projects with the most suitable capital sources through equity invest
                 Join our email list and get access to blog articles about the global transition landscape.
               </p>
               <div class="position-relative w-100 mt-3">
-                <input
-                  class="form-control border-0 rounded-pill w-100 ps-4 pe-5"
-                  type="text"
-                  placeholder="Your Email"
-                  style="height: 48px"
-                />
-                <button
-                  type="button"
-                  class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"
-                >
+                <form id="newsletter-form">
+                <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="email" id="email-input"
+                  placeholder="Enter your email" required style="height: 48px" />
+                <button type="submit" class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2 "
+                  id="subscribe-btn">
                   <i class="fa fa-paper-plane text-primary fs-4"></i>
                 </button>
+                <p id="message" style="display:none; margin-top: 10px;"></p>
+              </form>
               </div>
             </div>
           </div>
@@ -453,6 +452,7 @@ We connect projects with the most suitable capital sources through equity invest
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script src="js/newsletter.js"></script>
 </body>
 
 </html>
