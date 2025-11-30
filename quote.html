@@ -119,9 +119,13 @@
               <div class="form-floating">
                 <!-- optional: send selected service as {{service}} -->
                 <select class="form-select" id="floatingSelect" name="service" aria-label="Select a service">
-                  <option value="Financial Consultancy" selected>Financial Consultancy</option>
-                  <option value="Strategy Consultancy">Strategy Consultancy</option>
-                  <option value="Tax Consultancy">Tax Consultancy</option>
+                  <option value="Business Growth & Strategy" selected>Business Growth & Strategy</option>
+                  <option value="Transaction Advisory">Transaction Advisory</option>
+                  <option value="Sustainability Strategy">Sustainability Strategy</option>
+                  <option value="Audit & Compliance">Audit & Compliance</option>
+                  <option value="Decarbonization Support">Decarbonization Support</option>
+                  <option value="Climate Finance Structuring">Climate Finance Structuring</option>
+                  <option value="Operational Improvement">Operational Improvement</option>
                 </select>
                 <label for="floatingSelect">Select A Service</label>
               </div>
@@ -159,7 +163,7 @@
  <script>
   // Initialize EmailJS (replace with your public key)
   (function() {
-    emailjs.init("xmHwfc1UG7CgjE5vV");  // e.g. "9mQ1AbCdEfG..."
+    emailjs.init("xRTbZNwPLg9CWiYfM");  // e.g. "9mQ1AbCdEfG..."
   })();
 
   // Handle form submit
@@ -171,7 +175,7 @@
     btn.innerText = "Sending...";
 
     // Replace service_xxx and template_xxx with your IDs from EmailJS
-    emailjs.sendForm("service_c2w4xmf", "template_e9smoic", this)
+    emailjs.sendForm("service_hdwo5en", "template_j8hh8wg", this)
       .then(function() {
         alert("Your message has been sent successfully!");
         btn.disabled = false;
